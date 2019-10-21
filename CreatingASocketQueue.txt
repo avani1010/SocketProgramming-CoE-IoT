@@ -1,0 +1,13 @@
+* To accept incoming connections on a socket , a server program must create a queue to store pending requests.
+
+* This is done by listen System call
+
+Syntax :
+
+        #include <sys/socket.h>
+
+        int listen(int socket , int backlog) ;
+
+        Backlog - Queue Length for processing the request.
+
+        return value : 0 on success , -1 on error

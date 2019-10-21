@@ -1,0 +1,9 @@
+
+* client programs connect to servers by establishing a connection between an unnamed socket and server listen Socket - connect ()
+
+#include <sys/socket.h>
+
+int connect (int socket, const struct sockaddr *addr, size_t addr_len) ;
+
+
+

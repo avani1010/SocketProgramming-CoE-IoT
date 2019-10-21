@@ -1,0 +1,24 @@
+ * the socket system call creates a socket and returns the descriptor that can be used to access the socket
+
+Usage:
+------
+#include <sys/types.h>
+#include <sys/socket.h>
+
+API : int socket(int domain, int type , int protocol) ;
+Return : A descriptor to use
+
+Arguments
+---------
+domain :
+    AF_UNIX - internal sockets
+    AF_INET - Internet Protocol socket
+    AF_ISO - ISO standard protocols
+    AF_NS  - Xerox Network system protocols
+
+Type :
+    SOCK_STREAM and SOCK_DGRAM
+
+Protocol :
+    0 - default protocol for internet
+

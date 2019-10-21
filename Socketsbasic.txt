@@ -1,0 +1,13 @@
+Sockets
+------
+* These are logical constructs provided by the unix OS to establish client-server Arcitecture in the same PC or on remote PC's over the network
+
+* Sockets = IP addresses + Port Number
+
+* A port Number is an Integer Number used by the OS to expose a particular Service over the network
+* A client has to access the service via the port number only
+
+Example : Sockets - Like a telephone call made to an Industry, The operator will find out to whom the call should be forwarded and forwards the call to the requested person.
+
+
+

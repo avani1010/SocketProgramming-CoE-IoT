@@ -1,0 +1,21 @@
+* the socket gets created by socket() function call
+* to make the socket available for use by other processes a server program needs to give the socket a name - this is done by bind()
+
+
+AF_UNIX socket - associated with file system path
+AF_INET - associated with the IP Address and Port Number
+
+
+The Bind system call assigns the address in the parameter to the unnamed socket with the descriptor.
+
++++++++++++++++++++++++++++++++
+#include <sys/socket.h>
+int bind(int socket, const struct sockaddr *address, size_t address_len)
+
+
+socket - File descriptor of socket
+*address - IP address
+address_len - IP Address length
+
+Return value : 0 on successful bind or else returns -1 on error
+++++++++++++++++++++++++++++++++

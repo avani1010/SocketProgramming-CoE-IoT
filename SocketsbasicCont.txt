@@ -1,0 +1,27 @@
+* A socket is characterised by
+    1. Domain  2. Type 3. Protocol
+
+* Each socket has set of addresses that they can use. the format of addresses are specified by the protocol family (depends on domain)
+
+* A domain specify the network medium that the socket communication uses
+* The most commonly used socket domain is AF_INET
+* AF_INET - uses IP protocol and machines are addressed using IP-Addresses
+
+* Some of the commonly used PORT NO: (PORT NO < 1024 are system ports)
+    8080 - Apache, 21 - FTP
+
+Socket types :
+--------------
+Sockets are classified based on the service it provides on IP as,
+1. Stream Socket(TCP) 2. Datagram Socket(UDP)
+
+Stream Sockets are reliable using TCP - data sent is guarenteed, not lost
+Datagram Sockets are not reliable using UDP - best effort service
+
+* Stream Socket - SOCK_STREAM
+* Datagram Socket - SOCK_DGRAM
+
+* Stream Socket - connection establishment -> Data Transfer
+* Datagram Socket - No connection Establishment
+
+

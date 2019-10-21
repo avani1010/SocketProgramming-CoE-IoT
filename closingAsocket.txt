@@ -1,0 +1,1 @@
+terminate a socket connection at server and client by calling close() function using socket file descriptor

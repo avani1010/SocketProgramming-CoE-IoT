@@ -1,0 +1,12 @@
+* Once a server program has created and named a socket, it can wait for connections to be made to the socket by the clients by using the accept system call
+
+#include <sys/socket.h>
+
+int accept (int socket, struct sockaddr *address, size_t *address_len) ;
+
+** Very Important
+The accept function creates a new socket to communicate with the client and returns its descriptor
+The new socket has the same type as the server listen Socket
+
+** Server listens to client using listen socket
+** Upon accept - creates a new socket for each client and frees up the listen socket.
