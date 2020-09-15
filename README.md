@@ -1,4 +1,4 @@
-# SocketProgramming-CoE-IoT
+# SocketProgramming-IoT
 
 1. Creating A Socket - Server /Client
 2. Socket Addresses - Server/Client
